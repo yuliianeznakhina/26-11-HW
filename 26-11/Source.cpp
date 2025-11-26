@@ -47,12 +47,28 @@ int main()
 	{
 		arr1.push_back(Employee());
 	}
+	for (int i = 0; i < 10; i++)
+	{
+		arr2.push_back(Manager());
+	}
+	for (int i = 0; i < 10; i++)
+	{
+		arr3.push_back(Developer());
+	}
 
 	for ( auto ptr = arr1.begin(); ptr != arr1.end(); ptr++)
 	{
 		cout << ptr->GetSalary()<<"\t";
 	}
 	cout << endl;
-	
-
+	for (auto ptr = arr2.begin(); ptr != arr2.end(); ptr++)
+	{
+		cout << ptr->GetSalary() << "\t";
+	}
+	cout << endl;
+	for (auto ptr = arr3.begin(); ptr != arr3.end(); ptr++)
+	{
+		cout << ptr->GetSalary() << "\t";
+	}
+	cout << endl;
 }
