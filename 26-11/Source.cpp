@@ -43,4 +43,16 @@ int main()
 	vector<Employee> arr1;
 	vector<Manager> arr2;
 	vector<Developer> arr3;
+	for (int i = 0; i < 10; i++)
+	{
+		arr1.push_back(Employee());
+	}
+
+	for ( auto ptr = arr1.begin(); ptr != arr1.end(); ptr++)
+	{
+		cout << ptr->GetSalary()<<"\t";
+	}
+	cout << endl;
+	
+
 }
